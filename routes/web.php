@@ -51,9 +51,5 @@ use App\Http\Controllers\TagController;
     Route::delete('/logout', [SessionController::class, 'destroy'])
         ->middleware('auth')
         ->name('logout');
-<<<<<<< Updated upstream
-});
-=======
 
 //});
->>>>>>> Stashed changes
