@@ -33,11 +33,14 @@ Route::prefix($prefix)->group(function () {
 
     // Auth: registro y login para invitados
     Route::middleware('guest')->group(function () {
+        // Mostrar formulario de registro
         Route::get('/register', [RegisteredUserController::class, 'create'])
             ->name('register');
+        // Procesar envío de registro
         Route::post('/register', [RegisteredUserController::class, 'store'])
             ->name('register.store');
 
+        // Mostrar login y procesar login
         Route::get('/login', [SessionController::class, 'create'])
             ->name('login');
         Route::post('/login', [SessionController::class, 'store'])
@@ -48,5 +51,4 @@ Route::prefix($prefix)->group(function () {
     Route::delete('/logout', [SessionController::class, 'destroy'])
         ->middleware('auth')
         ->name('logout');
-
 });
