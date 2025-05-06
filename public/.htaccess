@@ -1,4 +1,9 @@
+# public/.htaccess
+
 <IfModule mod_rewrite.c>
+    #  ──────> AÑADE ESTA LÍNEA:
+    RewriteBase /nextjob
+
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
