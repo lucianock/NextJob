@@ -18,13 +18,13 @@
     <div class="px-10">
         <nav class="flex justify-between items-center py-4 border-b border-white/10">
             <div>
-                <a href="{{ route('home') }}">
+                <a href="{{ route('index') }}">
                     <h1 class="text-4xl font-extrabold">NextJob</h1>
                 </a>
             </div>
 
             <div class="space-x-6 font-bold">
-                <a href="{{ route('home') }}" class="hover:text-blue-800 transition-colors duration-300">Jobs</a>
+                <a href="{{ route('index') }}" class="hover:text-blue-800 transition-colors duration-300">Jobs</a>
                 <a href="#" class="hover:text-blue-800 transition-colors duration-300">Careers</a>
                 <a href="#" class="hover:text-blue-800 transition-colors duration-300">Salaries</a>
                 <a href="#" class="hover:text-blue-800 transition-colors duration-300">Companies</a>

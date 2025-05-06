@@ -13,7 +13,7 @@ Route::prefix($prefix)->group(function () {
 
     // Home / Listado de jobs
     Route::get('/', [JobController::class, 'index'])
-        ->name('home');
+        ->name('index');
 
     // Jobs
     Route::get('/jobs/create', [JobController::class, 'create'])
