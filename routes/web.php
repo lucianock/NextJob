@@ -7,9 +7,9 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\TagController;
 
-$prefix = env('APP_PREFIX', '');
+//$prefix = env('APP_PREFIX', '');
 
-Route::prefix($prefix)->group(function () {
+//Route::prefix($prefix)->group(function () {
 
     // Home / Listado de jobs
     Route::get('/', [JobController::class, 'index'])
@@ -51,4 +51,9 @@ Route::prefix($prefix)->group(function () {
     Route::delete('/logout', [SessionController::class, 'destroy'])
         ->middleware('auth')
         ->name('logout');
+<<<<<<< Updated upstream
 });
+=======
+
+//});
+>>>>>>> Stashed changes
