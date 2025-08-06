@@ -31,7 +31,7 @@ NextJob es una plataforma completa de búsqueda y publicación de empleos con fi
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/nextjob.git
+git clone https://github.com/lucianock/nextjob.git
 cd nextjob
 ```
 
